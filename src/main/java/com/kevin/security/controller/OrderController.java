@@ -8,6 +8,6 @@ public class OrderController {
 
     @GetMapping("/order")
     public String order() {
-        return "返回訂單數據";
+        return "返回訂單數據!";
     }
 }
