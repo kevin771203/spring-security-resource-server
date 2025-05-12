@@ -16,6 +16,7 @@ public class MySecurityConfig {
 
         return http
                 .authorizeHttpRequests(request -> request
+                        .requestMatchers("/order").hasAuthority("SCOPE_myhome")
                         .anyRequest().authenticated()
                 )
 
